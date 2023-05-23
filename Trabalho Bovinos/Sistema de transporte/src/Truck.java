@@ -1,4 +1,5 @@
 public class Truck {
+    // Define a capacidade de carregamento do caminhão com base na média de peso fornecida
     int carregamento;
 
     public void transporte(double media){
