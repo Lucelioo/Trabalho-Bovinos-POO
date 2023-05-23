@@ -6,4 +6,11 @@ public class Bovino {
         this.id = id;
         this.peso = peso;
     }
+
+    public int getId(){
+        return id;
+    }
+    public double getPeso(){
+        return peso;
+    }
 }
