@@ -8,7 +8,7 @@ public class App {
         for (int i = 0; i < fazenda1.length; i++) {
             // Criação de arrays do tipo Fazenda e cadastro de bovinos com valores aleatórios
             fazenda1[i] = new Fazenda();
-            fazenda1[i].cadastrarBovino(random.nextInt(900000) + 100000, random.nextInt(341) + 160);
+            fazenda1[i].cadastrarBovino(random.nextInt(900000) + 100000, random.nextInt(340) + 160);
         }
 
         Fazenda fazenda2[] = new Fazenda[50];
