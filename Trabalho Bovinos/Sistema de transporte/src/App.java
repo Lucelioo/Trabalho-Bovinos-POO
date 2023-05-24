@@ -14,7 +14,7 @@ public class App {
         Fazenda fazenda2[] = new Fazenda[50];
         int transferCount = 0;
 
-        Truck caminhao = new Truck();
+        Truck caminhao[] = new Truck[40];
 
         while (!isFazenda1Empty(fazenda1)) {
             // Transferência de bovinos de fazenda1 para fazenda2 com base na capacidade do caminhão
@@ -27,7 +27,9 @@ public class App {
                     bovinosTransferidos++;
 
                     if (bovinosTransferidos <= caminhao.getCarregamento()) {
-                        fazenda2[j] = fazenda1[j];
+                        caminhao[j] = fazenda1[j];
+                        fazenda2[j] = caminhao[j];
+                        caminhao[j] = null;
                         fazenda1[j] = null;
                     }
                 }
